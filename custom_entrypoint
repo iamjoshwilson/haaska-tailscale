@@ -8,7 +8,7 @@ mkdir -p /tmp/tailscale
 sleep 2  # give it a moment to start
 
 # Bring up Tailscale once
-/var/runtime/tailscale up --authkey="$TAILSCALE_AUTHKEY" --hostname=aws-lambda-app
+/var/runtime/tailscale up --authkey="$TAILSCALE_AUTHKEY" --hostname=aws-lambda-app --force-reauth
 
 echo "Tailscale started"
 
